@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class whileExercises {
 	public static void main(String[] args) {
-		/*Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter coefficients a, b, c, d: ");
 		int a = sc.nextInt();
 		int b = sc.nextInt();
@@ -12,7 +12,7 @@ public class whileExercises {
 		whileHistogram();
 		whileLargestAndSmallest();
 		whileSales();
-		whileSquares();*/
+		whileSquares();
 		whileAverageSentinel();
 	}
 	
