@@ -5,10 +5,10 @@ public class forExercises {
 	final static int NUM_INPUTS = 3;
 	
 	public static void main(String[] args) {
-		/*forHeaderTesting();
+		forHeaderTesting();
 		forSmallestLargest();
 		forHistogram();
-		forAverage();*/
+		forAverage();
 		forSequence();
 	}
 	
