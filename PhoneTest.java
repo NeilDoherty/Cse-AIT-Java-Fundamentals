@@ -11,9 +11,9 @@ class Phone {
 	}
 
 	public Phone(String aNumber, String aOwnersName, double aPrice) {
-		theNumber = aNumber;
-		theOwnersName = aOwnersName;
-		thePrice = aPrice;
+		this.theNumber = aNumber;
+		this.theOwnersName = aOwnersName;
+		this.thePrice = aPrice;
 	}
 
 	@Override

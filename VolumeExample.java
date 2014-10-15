@@ -10,9 +10,9 @@ class Volume {
 	}
 
 	public Volume(int aLength, int aWidth, int aHeight) {
-		theLength = aLength;
-		theWidth = aWidth;
-		theHeight = aHeight;
+		this.theLength = aLength;
+		this.theWidth = aWidth;
+		this.theHeight = aHeight;
 	}
 
 	public int getVolume() {
