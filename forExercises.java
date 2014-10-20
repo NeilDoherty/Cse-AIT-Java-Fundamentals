@@ -46,7 +46,7 @@ public class forExercises {
 			if (input > largest) {
 				largest = input;
 			}
-		if (input < smallest) {
+			if (input < smallest) {
 				smallest = input;
 			}
 			System.out.println(largest + " is the largest number");
