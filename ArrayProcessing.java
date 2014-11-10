@@ -6,9 +6,11 @@ public class ArrayProcessing {
 		exerciseB();
 		exerciseC();
 		dynamicHistogram();
-		frequency();*/
-		multiDimArray();
+		frequency();
+		multiDimArray();*/
+		studentGrades();
 	}
+	
 	
 	public static void exerciseA() {
 		int []a = {10,20,30,40,50};
@@ -87,6 +89,30 @@ public class ArrayProcessing {
 				}
 			}
 			System.out.println("]");
+		}
+	}
+	
+	public static void studentGrades() {
+		int [][]studentGrades = {{77,68,86,73},{96,87,89,78},{70,90,86,81}};
+		System.out.println("The array is:");
+		printArray(studentGrades);
+	}
+	
+	public static void printArray(int[][] studentGrades) {
+		for (int i = 0 ; i < studentGrades.length ; i ++) {
+			if (i == 0) {
+				System.out.print("\t\t\t");
+				for (int x = 0 ; x < studentGrades.length ; x ++)
+				{
+					System.out.print("[" + x + "]\t\t");
+				}
+				System.out.println("\n");
+			}
+			System.out.print("studentGrades[" + i + "]\t");
+			for (int j = 0 ; j < studentGrades.length ; j ++) {
+				System.out.print(studentGrades[i][j] + "\t\t");
+			}
+			System.out.println();
 		}
 	}
 }
