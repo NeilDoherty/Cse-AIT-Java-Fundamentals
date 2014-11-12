@@ -96,6 +96,13 @@ public class ArrayProcessing {
 		int [][]studentGrades = {{77,68,86,73},{96,87,89,78},{70,90,86,81}};
 		System.out.println("The array is:");
 		printArray(studentGrades);
+		minimum(studentGrades);
+		maximum(studentGrades);
+		for (int i = 0 ; i < studentGrades.length ; i ++) {
+			for (int j = 0 ; j < studentGrades.length ; j ++) {
+				average(studentGrades[i]);
+			}
+		}
 	}
 	
 	public static void printArray(int[][] studentGrades) {
@@ -114,5 +121,52 @@ public class ArrayProcessing {
 			}
 			System.out.println();
 		}
+	}
+	
+	public static int minimum(int [][]studentGrades) {
+		int lowGrade = 100;
+		/*for (int i = 0 ; i < studentGrades.length ; i++) {
+			for (int j = 0 ; j < studentGrades.length ; j++) {
+				if (studentGrades[i][j] < lowGrade) {
+					lowGrade = studentGrades[i][j];
+					System.out.println("lowest grade is " + lowGrade);
+				}
+			}
+		}*/
+		for (int[] outer : studentGrades) {  
+			for (int value : outer) {
+				if (value < lowGrade) {
+					lowGrade = value;
+					System.out.println(value);
+				}  
+			}  
+		}
+		return lowGrade;
+	}
+	
+	public static int maximum(int [][]studentGrades) {
+		int highGrade = 0;
+		/*for (int i = 0 ; i < studentGrades.length ; i++) {
+			for (int j = 0 ; j < studentGrades.length ; j++) {
+				if (studentGrades[i][j] > highGrade) {
+					highGrade = studentGrades[i][j];
+					System.out.println("highest grade is " + highGrade);
+				}
+			}
+		}*/
+		for (int[] outer : studentGrades) {  
+			for (int value : outer) {
+				if (value > highGrade) {
+					highGrade = value;
+					System.out.println(value);
+				}  
+			}  
+		}
+		return highGrade;
+	}
+	
+	public static double average(int[] studentGrades) {
+		System.out.println(studentGrades[0]);
+		return 0;
 	}
 }
