@@ -2,7 +2,8 @@ import java.util.Arrays;
 
 public class ArrayExercises2 {
 	public static void main(String[] args) {
-		statistics();
+		//statistics();
+		usingArraysClass();
 	}
 
 	public static void statistics() {
@@ -44,5 +45,21 @@ public class ArrayExercises2 {
 		int range = (arr[arr.length-1] - arr[0]);
 		System.out.println(range);
 		return range;
+	}
+	
+	public static void usingArraysClass() {
+		double [] grades = {92.3, 44.9, 76.9, 73.2};
+		Arrays.sort(grades);
+		for (double d: grades) {
+			System.out.println("grade == " + d);
+		}
+		double [] low = Arrays.copyOfRange(grades, 0, 2);
+		for (double e: low) {
+			System.out.println("grade == " + e);
+		}
+		double [] high = Arrays.copyOfRange(grades, 2, 5);
+		for (double f: high) {
+			System.out.println("grade == " + f);
+		}
 	}
 }
